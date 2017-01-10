@@ -26,3 +26,4 @@ var swaggerUI = createServer({ root: dist, cors: true });\
 swaggerUI.listen(8888);" > /swaggerui/index.js
 
 EXPOSE 8888
+CMD ["node", "/swaggerui/index.js"]
