@@ -23,7 +23,7 @@ var dist = path.join('swaggerui', 'dist');\
 var replace = require('replace');\
 replace({regex: 'http.*swagger.json', replacement : process.env.API_URL, paths: ['/swaggerui/dist/swagger-ui/index.html'], recursive:false, silent:true,});\
 var swaggerUI = createServer({ root: dist, cors: true });\
-swaggerUI.listen(8888);" > /swaggerui/index.js
+swaggerUI.listen(80);" > /swaggerui/index.js
 
-EXPOSE 8888
+EXPOSE 80
 CMD ["node", "/swaggerui/index.js"]
