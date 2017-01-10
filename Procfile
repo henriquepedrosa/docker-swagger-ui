@@ -1,1 +1,1 @@
-web: echo 'running'
+web: node /swaggerui/index.js
