@@ -1,1 +1,1 @@
-web:
+web: echo 'running'
